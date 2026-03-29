@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+pdfplumber
+python-docx
+scikit-learn
+python-dateutil

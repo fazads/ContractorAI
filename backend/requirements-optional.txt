@@ -1,0 +1,4 @@
+openai
+sentence-transformers
+pytesseract
+Pillow

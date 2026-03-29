@@ -1,0 +1,12 @@
+services:
+  contract-ai-assistant:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4.1-mini}
+      RETRIEVER_MODE: ${RETRIEVER_MODE:-tfidf}
+    restart: unless-stopped
